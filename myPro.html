@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1">
+    <meta id="viewport" name="viewport"
+        content="width=device-width user-scalable=yes minimum-scale=.2 maximum-scale=1.0">
+    <meta name="HandheIdFriendly" content="true">
+    <meta name="MobileOptimized" content="320 640">
+    <meta name="keywords" content="Highlights library">
+    <!-- 키워드 //SEO검색 관련으로 인하여 삽입 // 각 컨텐츠 별로 추가 또는 컨텐츠타이틀 게시판view는 게시글 제목 넣으면 좋을 것 같습니다~!  -->
+    <meta name="description" content="global highlights">
+    <meta property="og:title" content="global highlights">
+    <meta property="og:url" content="http://library.highlights.com/">
+    <meta property="og:image"
+        content="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/common/logo.png">
+    <meta property="og:description" content="global highlights">
+    <title>Highlights Library</title>
+
+    <link rel="stylesheet" type="text/css"
+        href="./base.css">
+    <link rel="stylesheet" type="text/css"
+        href="./cmm.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/css/app/common/swiper.css?v=2023080404">
+    <link rel="stylesheet" type="text/css"
+        href="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/css/app/common/range-slider.css?v=2023080404">
+    <link rel="stylesheet" type="text/css"
+        href="./style.css">
+</head>
+
+<body>
+        
+    <!-- HEADER APP -->
+<!-- swiper -->
+<nav id="top">
+<div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android" style="opacity: 1;">
+<ul class="swiper-wrapper">
+<!-- @todo app_addr -->
+    <li class="swiper-slide swiper-slide-active"><a class="" data-nav="phonics" href="/app/library/phonics">Phonics Readers</a></li>
+    <li class="swiper-slide swiper-slide-next"><a class="" data-nav="level" href="/app/library/level">Books</a></li>
+    <li class="swiper-slide"><a data-nav="animation" href="/app/library/animation">Videos</a></li>
+    <li class="swiper-slide"><a data-nav="assignment" href="/app/library/assignment">Assignment<span class="new"></span></a></li>
+    <li class="swiper-slide"><a data-nav="myfavorite" href="/app/library/myfavorite">My Favorite</a></li>
+</ul>
+<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+</nav>
+<!-- /swiper -->
+
+<!-- filters  -->
+<div class="setting-wrap">
+<header>
+<h1>Filters</h1>
+<div class="l-btn">Cancel</div>
+<div class="r-btn">Save</div>
+</header>
+<div class="content">
+<section>
+    <div class="title">
+        <h2>LEVEL</h2>
+    </div>
+    <div class="box range-wrap">
+        <div class="range-slider">
+            <div class="level start" data-min="1">1</div>
+                        <div class="level end" data-max="30">30</div>
+            <div id="slider"></div>
+            <span id="min"></span>
+            <span id="max"></span>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="title">
+        <h2>FICTION / NONFICTION</h2>
+    </div>
+    <div class="box tab">
+        <div class="tab-wrap ">
+            <div class="genre">
+                <a href="#" data-genre="11" class="li-genre tab-act">FICTION</a>
+            </div>
+            <div class="genre">
+                <a href="#" data-genre="12" class="li-genre tab-act">NONFICTION</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="title">
+        <h2>CATEGORY</h2>
+    </div>
+    <div class="box category">
+        <div class="book-area-wrap">
+            <ul class="content-area" data-type="tab-1">
+                <li>
+                        <a href="#" class="act" data-idx="102">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contents-school.png" alt="School">
+                            <h1>School</h1>
+                        </a>
+                     </li><li>
+                        <a href="#" class="act" data-idx="100">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contents-animal.png" alt="Animals">
+                            <h1>Animals</h1>
+                        </a>
+                     </li><li>
+                        <a href="#" class="act" data-idx="104">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contents-world.png" alt="People &amp; Places">
+                            <h1>People &amp; Places</h1>
+                        </a>
+                     </li><li>
+                        <a href="#" class="act" data-idx="108">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contents-sno.png" alt="Sports">
+                            <h1>Sports</h1>
+                        </a>
+                     </li><li>
+                        <a href="#" class="act" data-idx="105">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contents-art.png" alt="Art &amp; Culture">
+                            <h1>Art &amp; Culture</h1>
+                        </a>
+                     </li><li>
+                        <a href="#" class="act" data-idx="101">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contents-ff.png" alt="Family &amp; Friends">
+                            <h1>Family &amp; Friends</h1>
+                        </a>
+                     </li><li>
+                        <a href="#" class="act" data-idx="106">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contents-snn.png" alt="Science &amp; Nature">
+                            <h1>Science &amp; Nature</h1>
+                        </a>
+                     </li><li>
+                        <a href="#" class="act" data-idx="103">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contents-neighbor.png" alt="Community">
+                            <h1>Community</h1>
+                        </a>
+                     </li><li>
+                        <a href="#" class="act" data-idx="107">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contents-hnw.png" alt="Health &amp; Wellness">
+                            <h1>Health &amp; Wellness</h1>
+                        </a>
+                     </li><li>
+                        <a href="#" class="act" data-idx="109">
+                            <span></span>
+                            <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/contets-fun.png" alt="Fun Stories">
+                            <h1>Fun Stories</h1>
+                        </a>
+                     </li>
+            </ul>
+            <ul class="content-area" data-type="tab-2" style="display: none;">
+                <li>
+                    <a href="#" class="" data-idx="179">
+                        <span></span>
+                        <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/didyouknow.png" alt="">
+                        <h1></h1>
+                    </a>
+                 </li><li>
+                    <a href="#" class="" data-idx="181">
+                        <span></span>
+                        <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/whoami.png" alt="">
+                        <h1></h1>
+                    </a>
+                 </li><li>
+                    <a href="#" class="" data-idx="183">
+                        <span></span>
+                        <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/brainplay.png" alt="">
+                        <h1></h1>
+                    </a>
+                 </li><li>
+                    <a href="#" class="" data-idx="185">
+                        <span></span>
+                        <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/askhllkids.png" alt="">
+                        <h1></h1>
+                    </a>
+                 </li><li>
+                    <a href="#" class="" data-idx="187">
+                        <span></span>
+                        <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/makeit.png" alt="">
+                        <h1></h1>
+                    </a>
+                 </li><li>
+                    <a href="#" class="" data-idx="189">
+                        <span></span>
+                        <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/library/animation.png" alt="">
+                        <h1></h1>
+                    </a>
+                 </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</div>
+</div>
+<script>
+var aJsLang = JSON.parse('{"myinformation_txt_1":"Enter your name in English.","myinformation_txt_2":"Wrong email.","myinformation_txt_3":"Please select the checkbox to confirm your agreement","myinformation_txt_4":"You have not completed the update.<br>Please check again.","myinformation_txt_5":"Please provide a valid email address.","myinformation_txt_6":"Please check your email duplicate.","myinformation_txt_7":"Please select your age.","myinformation_txt_8":"Please select at least one.","myinformation_txt_9":"This email is already registered.","leveltest_txt_1":"Sorry, refresh function is not allowed.","leveltest_txt_2":"DB Error","leveltest_txt_3":"System Notice","leveltest_ok":"OK","reinformation_txt_1":"Please select an avatar.","reinformation_txt_2":"Please select at least one.","home_txt_1":"Temporary error.<br>If this happens again, please send us e-mail <br> through My page > Support.","home_txt_2":"Change your level","home_txt_3":"Good job, a reward is waiting for you! <br\/>Do you want to go to the rewards page?","home_ok":"OK","home_cancel":"Cancel","home_levelup":"Level Up!","home_txt_4":"Goal Achieved!","home_txt_5":"Read 3 more books to change levels!","home_read":"Read","home_txt_6":" more books to change levels!","bookdetail_txt_1":"The quiz can be taken after <br \/>reading the book.","bookdetail_txt_2":"You must read this book <br \/>before you can watch the video.","bookdetail_txt_3":"Your account has expired.<br>Please contact your teacher.","bookdetail_txt_4":"Your browser is not supported.<br>To use this service, please upgrade <br>the latest version of Explorer, Chrome or Firefox.","bookdetail_txt_5":"Access is denied.","bookdetail_txt_6":"No more than 200 titles in My Favorite.<br>Remove added books and try add to <br>My Favorite again.","bookdetail_txt_7":"This book is already in your My Favorite.","bookdetail_txt_8":"Temporary error.<br>Please try it again in a few minutes.","bookdetail_txt_9":"The Activity can be taken after <br>reading the book.","bookdetail_myfavorite":"My Favorite","phonics_txt_1":"You can learn the content<br>after reading the previous phonics.","activity_unavailable":"Activity Unavailable!","speaking_unavailable_msg":"The Readers+ Speaking activity is not supported on mobile browsers. Please use the Highlights Library app or a desktop browser.","assignment_unavailable_msg":"This assignment has already been evaluated by the teacher. <br>You are unable to submit a new response at this time. <br>Please review your score and comments.","assignment_no_activity":"There&#39;s no activity records on this assignment.","animationdetail_app_txt_1":"The quiz can be taken after <br>reading the book.","animationdetail_app_txt_2":"You must read this book <br>before you can watch the video.","animationdetail_app_txt_3":"Your browser is not supported.<br>To use this service, please upgrade <br>the latest version of Explorer, Chrome or Firefox.","animationdetail_app_txt_4":"Access is denied.","animationdetail_app_txt_5":"Your account has expired.<br>Please contact your teacher.","animationdetail_app_txt_6":"No more than 200 titles in My Favorite.<br>Remove added videos and try add to <br>My Favorite again.","animationdetail_app_txt_7":"This video is already in your My Favorite.","animationdetail_app_myfavorite":"My Favorite","animationdetail_app_txt_8":"Temporary error.<br>Please try it again in a few minutes.","myprofile_editprofile":"Edit profile","myprofile_txt_1":"Your Last name is required.","myprofile_txt_2":"Your First name is required.","myprofile_txt_3":"Please make sure you use <br>your e-mail address correctly.","myprofile_txt_4":"Please enter your password again.","myprofile_txt_5":"Password is not valid.<br>Please enter correct password.","myprofile_txt_6":"* Your password should be 4~20 characters in length.<br>","myprofile_txt_7":"* English capital letters, lower case letters, and numbers are available.<br>","myprofile_txt_8":"* Special characters only &#33;&#64;&#35;&#36;&#37;&#94; are allowed.<br>","myprofile_txt_9":"For the safety and security of you account, your new password should contain at least 1 digit or special character.","myprofile_txt_10":"Reading History","myprofile_nodata":"No Data.","myprofile_txt_11":"Temporary error.<br>If this happens again, please send us e-mail <br> through My page > Support.","myprofile_school":"School","myprofile_animals":"Animals","myprofile_peopleplaces":"People & Places","myprofile_sports":"Sports","myprofile_artculture":"Art & Culture","myprofile_familyfreinds":"Family & Friends","myprofile_sciencenature":"Science & Nature","myprofile_community":"Community","myprofile_healthwellness":"Health & Wellness","myprofile_funstories":"Fun Stories","myprofile_completed":"Completed&#33;","myprofile_stillreading":"Still reading","myprofile_read":"read","myprofile_email_invalid":"Email address invalid.","myprofile_report_frequency":"Please select report frequency","category_school":"School","category_animals":"Animals","category_peopleplaces":"People & Places","category_sports":"Sports","category_artculture":"Art & Culture","category_familyfriends":"Family & Friends","category_sciencenature":"Science & Nature","category_community":"Community","category_healthwellness":"Health & Wellness","category_funstories":"Fun Stories","mylevel_reset":"Reset","mylevel_txt_1":"Your school does not have access to this level.<br>Please contact an administrator if you have<br> any questions","emailus_txt_1":"Write down your name.","emailus_txt_2":"Please enter your name in english.","emailus_txt_3":"E-mail address is required.","emailus_txt_4":"Please make sure you use<br> your e-mail address correctly.","emailus_txt_5":"Text box is empty.","myhistory_txt_1":"This book is a hidden book.<br> Please contact your teacher.","myhistory_txt_2":"Temporary error.<br>If this happens again, please send us e-mail <br> through My page &#62; Support.","myhistory_editprofile":"Edit profile","myhistory_general":"General","myhistory_assignment":"Assignment","myhistory_completed":"Completed!","myhistory_stillreading":"Still reading","myhistory_read":"read","header_txt_1":"Good job, a reward is waiting for you&#33;","header_txt_2":"Do you want to go to the rewards page?","header_txt_3":"A reward is waiting for you!<br\/>Do you want to go to the rewards page?","header_ok":"OK","header_cancel":"Cancel","common_txt_1":"Sorry, refresh function is not allowed.","common_txt_2":"Your browser is not supported.<br>To use this service, please upgrade <br>the latest version of Explorer, Chrome or Firefox.","common_txt_3":"Access is denied.","common_txt_4":"Your account has expired.<br>Please contact your teacher.","common_txt_5":"No more than 200 titles in My Favorite.<br>Remove added books and try add to <br>My Favorite again.","common_txt_6":"This book is already in your My Favorite.","common_txt_7":"Temporary error.<br>Please try it again in a few minutes.","common_systemnotice":"System Notice","common_ok":"OK","common_cancel":"Cancel","footer_other_txt_1":"Write down your name.","footer_other_txt_2":"Please make sure <br>you use your e-mail address correctly.","footer_other_txt_3":"Text box is empty.","footer_other_name":"Name","footer_other_from":"From","footer_other_txt_4":"Write down your email address","footer_other_message":"Message","footer_other_send":"Send","common_tryagain":"Try again","bookreport_exit_title":"Exit Book Report","bookreport_exit_txt_1":"Are you sure want to exit the Book Report? <br> It will save only the answers that are clicked on the next button.","bookreport_exit_yes":"Yes","bookreport_exit_no":"No","bookreport_txt_2":"You have completed all the Book Report questions.","bookreport_txt_3":"You can&#39;t go previous page.","bookreport_txt_4":"Save and go to next question","thinkingmobile_exit_thinking":"Exit Thinking","thinkingmobile_txt_5":"<br>Are you sure want to exit the Thinking?<br>Your answers will not be saved.","thinkingmobile_txt_6":"Save and go to next question","activitylistening_exie_listening":"Exit Listening","activitylistening_txt1":"Are you sure want to exit the Listening?<br>Your answers will not be saved.","speakingmobile_exitspeaking":"Exit Speaking","speakingmobile_txt_1":"<br>Are you sure you want to exit the Speaking? <br> Your answers will not be saved.","speakingmobile_txt_2":"This activity is not supported by Internet Explorer.<br>Please try a different browser.","speakingmobile_txt_3":"Microphone Connection","speakingmobile_txt_4":"This browser does not support recording. <br> Please use another browser.","speakingmobile_txt_5":"Your microphone is not connected.<br> Please test your microphone and try again.","speakingmobile_systemnotice":"System Notice","speakingmobile_txt_6":"Maximum recording time reached! <br>Your recording will be evaluated.","rtcmobile_txt_1":"Your browser doesn&#39;t support a stable version of IndexedDB. Such and such feature will not be available.","rtcmobile_needs_practice":"Needs Practice!","rtcmobile_good":"Good!","rtcmobile_great":"Great!"}');
+var aRewardBadge = JSON.parse('{"1":{"book_cnt":"1","certificate_yn":"y"},"2":{"book_cnt":"10","certificate_yn":"y"},"3":{"book_cnt":"20","certificate_yn":"n"},"4":{"book_cnt":"30","certificate_yn":"y"},"5":{"book_cnt":"40","certificate_yn":"n"},"6":{"book_cnt":"50","certificate_yn":"y"},"7":{"book_cnt":"60","certificate_yn":"n"},"8":{"book_cnt":"70","certificate_yn":"n"},"9":{"book_cnt":"80","certificate_yn":"n"},"10":{"book_cnt":"90","certificate_yn":"n"},"11":{"book_cnt":"100","certificate_yn":"y"},"12":{"book_cnt":"110","certificate_yn":"n"},"13":{"book_cnt":"120","certificate_yn":"n"},"14":{"book_cnt":"130","certificate_yn":"n"},"15":{"book_cnt":"140","certificate_yn":"n"},"16":{"book_cnt":"150","certificate_yn":"y"},"17":{"book_cnt":"160","certificate_yn":"n"},"18":{"book_cnt":"170","certificate_yn":"n"},"19":{"book_cnt":"180","certificate_yn":"n"},"20":{"book_cnt":"190","certificate_yn":"n"},"21":{"book_cnt":"200","certificate_yn":"y"},"22":{"book_cnt":"210","certificate_yn":"n"},"23":{"book_cnt":"220","certificate_yn":"n"},"24":{"book_cnt":"230","certificate_yn":"n"},"25":{"book_cnt":"240","certificate_yn":"n"},"26":{"book_cnt":"250","certificate_yn":"y"},"27":{"book_cnt":"260","certificate_yn":"n"},"28":{"book_cnt":"270","certificate_yn":"n"},"29":{"book_cnt":"280","certificate_yn":"n"},"30":{"book_cnt":"290","certificate_yn":"n"},"31":{"book_cnt":"300","certificate_yn":"y"},"32":{"book_cnt":"310","certificate_yn":"n"},"33":{"book_cnt":"320","certificate_yn":"n"},"34":{"book_cnt":"330","certificate_yn":"n"},"35":{"book_cnt":"340","certificate_yn":"n"},"36":{"book_cnt":"350","certificate_yn":"y"},"37":{"book_cnt":"360","certificate_yn":"n"},"38":{"book_cnt":"370","certificate_yn":"n"},"39":{"book_cnt":"380","certificate_yn":"n"},"40":{"book_cnt":"390","certificate_yn":"n"},"41":{"book_cnt":"400","certificate_yn":"y"},"42":{"book_cnt":"410","certificate_yn":"n"},"43":{"book_cnt":"420","certificate_yn":"n"},"44":{"book_cnt":"430","certificate_yn":"n"},"45":{"book_cnt":"440","certificate_yn":"n"},"46":{"book_cnt":"450","certificate_yn":"y"},"47":{"book_cnt":"460","certificate_yn":"n"},"48":{"book_cnt":"470","certificate_yn":"n"},"49":{"book_cnt":"480","certificate_yn":"n"},"50":{"book_cnt":"490","certificate_yn":"n"},"51":{"book_cnt":"500","certificate_yn":"y"},"52":{"book_cnt":"520","certificate_yn":"n"},"53":{"book_cnt":"540","certificate_yn":"n"},"54":{"book_cnt":"560","certificate_yn":"n"},"55":{"book_cnt":"580","certificate_yn":"n"},"56":{"book_cnt":"600","certificate_yn":"y"},"57":{"book_cnt":"620","certificate_yn":"n"},"58":{"book_cnt":"640","certificate_yn":"n"},"59":{"book_cnt":"660","certificate_yn":"n"},"60":{"book_cnt":"680","certificate_yn":"n"},"61":{"book_cnt":"700","certificate_yn":"y"},"62":{"book_cnt":"720","certificate_yn":"n"},"63":{"book_cnt":"740","certificate_yn":"n"},"64":{"book_cnt":"760","certificate_yn":"n"},"65":{"book_cnt":"780","certificate_yn":"n"},"66":{"book_cnt":"800","certificate_yn":"y"},"67":{"book_cnt":"820","certificate_yn":"n"},"68":{"book_cnt":"840","certificate_yn":"n"},"69":{"book_cnt":"860","certificate_yn":"n"},"70":{"book_cnt":"880","certificate_yn":"n"},"71":{"book_cnt":"900","certificate_yn":"y"},"72":{"book_cnt":"920","certificate_yn":"n"},"73":{"book_cnt":"940","certificate_yn":"n"},"74":{"book_cnt":"960","certificate_yn":"n"},"75":{"book_cnt":"980","certificate_yn":"n"},"76":{"book_cnt":"1000","certificate_yn":"y"}}');
+var sUserImg = JSON.parse('"spot"');
+</script>
+
+<input type="hidden" id="sMU_USE" name="sMU_USE" value="1">
+<input type="hidden" id="iMemUserLevel" name="iMemUserLevel" value="4">
+<input type="hidden" id="iReadTotalCnt" name="iReadTotalCnt" value="">
+<input type="hidden" id="iTotalBookCnt" name="iTotalBookCnt" value="">
+<input type="hidden" id="iLevelUpBaseCnt" name="iLevelUpBaseCnt" value="">
+<input type="hidden" id="sLvUpOpenYN" name="sLvUpOpenYN" value="">
+<input type="hidden" id="sRewardMoveYn" name="sRewardMoveYn" value="N">
+<input type="hidden" id="iRewardCnt" name="iRewardCnt" value="66">
+<input type="hidden" id="sLoginType" name="sLoginType" value="">
+
+<!-- student study option s -->
+<input type="hidden" id="level_below" name="level_below" value="">
+<input type="hidden" id="level_above" name="level_above" value="">
+<input type="hidden" id="dashboard_goal" name="dashboard_goal" value="">
+<input type="hidden" id="hidden_pictures_goal" name="hidden_pictures_goal" value="">
+<input type="hidden" id="pop_today_book" name="pop_today_book" value="">
+<input type="hidden" id="level_up_test" name="level_up_test" value="">
+<input type="hidden" id="level_change" name="level_change" value="">
+<input type="hidden" id="edit_profile" name="edit_profile" value="">
+
+<input type="hidden" name="sMyGoalList" id="sMyGoalList" value="">
+
+<!-- swiper -->
+<nav id="top" class="header_other">
+<div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android" style="opacity: 1;">
+    <ul class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-14.6249px, 0px, 0px);">
+        <li class="swiper-slide swiper-slide-active"><a class="act" href="myprofile">My Profile</a></li>
+        <li class="swiper-slide swiper-slide-next"><a href="myhistory">My History</a></li>
+        <li class="swiper-slide"><a href="support">Support</a></li>
+    </ul>
+<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+</nav>
+<!-- /swiper -->
+<div class="content fix wid-no">
+<div class="my-profile">
+    <div class="container">
+        <div class="box">
+            <section>
+                <div class="level">
+                    <span class="lv-purple">4</span>
+                </div>
+                <div class="edit">
+                    <a href="myprofile/editprofile"><img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/app/sub/btn-profile-edit.png" alt="edit"></a>
+                </div>
+                <div class="my">
+                    <img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/app/sub/avatar-spot.png" alt="">
+                </div>
+                <p class="name">student</p>
+                <button type="button" id="prBtn" class="btn-click  btn-cyan "><img src="https://lib-v7.readhighlights.com/public_html/resource/images/icn/icn-report.svg" alt="">Parent Report</button>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <span>Lexile reading range<br>for Level</span>
+                        <p>250-300</p>
+                    </li>
+                    <li>
+                        <span>Valid until</span>
+                        <p>2024-04-Jun</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <section class="list">
+        <div class="title">Dashboard<span class="next"><img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/app/cmm/icn-arrow.png" alt="mydashboardapp"></span></div>
+        <div class="title">My Interests<span class="next"><img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/app/cmm/icn-arrow.png" alt="myinterests"></span></div>
+        <div class="title">My Level<span class="next"><img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/app/cmm/icn-arrow.png" alt="mylevel"></span></div>
+        <div class="title">E-mail us<span class="next"><img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/app/cmm/icn-arrow.png" alt="emailus"></span></div>
+        <div class="title">Settings<span class="next"><img src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/images/app/cmm/icn-arrow.png" alt="settings"></span></div>
+    </section>
+</div>
+</div>
+
+<script>
+var isFromPrmPopup = 'N';
+</script>
+
+
+<script src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/js/app/common/jquery-1.11.1.min.js?v=2023080404" type="text/javascript"></script>
+<script src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/js/app/common/jquery.cookie.js?v=2023080404" type="text/javascript"></script>
+<script src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/js/app/common/menu.swiper.js?v=2023080404" type="text/javascript"></script>
+<script src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/js/app/common/jquery-ui-1.10.0.min.js?v=2023080404" type="text/javascript"></script>
+<script src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/js/app/common/jquery.ui.touch-punch.min.js?v=2023080404" type="text/javascript"></script>
+<script src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/js/app/common/ARBITER.js?v=2023080404" type="text/javascript"></script>
+<script src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/js/app/common/common.js?v=2023080404" type="text/javascript"></script>
+
+
+<script type="text/javascript" src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/js/app/mypage/myprofile.js?v=2022033001"></script><script type="text/javascript" src="https://web-cdn.chungchy.com/Highlights_Global_V7/library/public_html/resource/js/app/common/header_other.js?v=2022072904"></script>
+
+
+</body>
+
+</html>
