@@ -260,7 +260,7 @@
   .card_wrap .card .card_item{
     width: 100%;
     max-width: 600px;
-    min-width: 320px;
+    min-width: inherit;
   }
   .card_wrap .card .card_item li .deco_right{
     right: -300px;
@@ -402,6 +402,7 @@
     justify-content: center;
   }
   .quick_wrap{
+    gap: 0;
     padding: 0;
   }
   .quick{
@@ -473,7 +474,7 @@
     font-size: 18px;
     &:first-child{
       flex-direction: column;
-      padding: 54px 0;
+      padding: 54px 16px;
       border-top: 6px solid #f2f2f2;
       border-bottom: 6px solid #f2f2f2;
     }
@@ -516,7 +517,7 @@
       bottom: -20px;
     }
   }
-  .flex, .gray_bg .con{
+  .gray_bg .con{
     gap: 54px;
   }
   .gray_bg .con:first-child > .notice_wrap{
