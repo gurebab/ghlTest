@@ -145,6 +145,7 @@
   .nav2depth ul li a{
     padding: 12px 24px;
     border: 0;
+    font-size: 16px;
     text-align: left;
   }
   .topPopup .con .text h2{
@@ -387,6 +388,16 @@
     width: 28px;
     height: 28px;
   }
+  .m_menu_wrap .m_menu{
+    width: 100%;
+  }
+  .m_menu_wrap .m_menu .m_nav li .flex{
+    width: 100%;
+    gap: 0;
+  }
+  .m_menu_wrap .m_menu .m_nav li .flex li{
+    width: calc(50%);
+  }
   .visual_section{
     flex-direction: column;
     margin: 0;
@@ -581,7 +592,7 @@
   }
   .board_list td{
     padding: 0;
-    font-size: 13px;
+    font-size: 14px;
   }
   .board_list .num,
   .board_list .date,
