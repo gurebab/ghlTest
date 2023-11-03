@@ -5,7 +5,7 @@
 }
 
 @media screen and (max-width : 1600px) {
-  .flex,
+  .flex:not(.input_wrap),
   .gray_bg .con{
     gap: 36px;
   }
@@ -27,9 +27,6 @@
   .header_bottom .gnb{
     max-width: inherit;
     width: 80%;
-  }
-  .header_bottom .gnb .nav_1depth > li{
-    width: 100%;
   }
   .header_bottom .gnb .nav_1depth > li > a{
     padding: 36px 0px;
@@ -125,6 +122,31 @@
   .con{
     padding: 0 16px;
   }
+  .nav2depth{
+    padding: 0;
+  }
+  .nav2depth ul{
+    gap: 0;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 54px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      display: none;
+    }
+  }
+  .nav2depth ul li{
+    flex-shrink: 0;
+    width: 200px;
+  }
+  .nav2depth ul li a{
+    padding: 12px 24px;
+    border: 0;
+    text-align: left;
+  }
   .topPopup .con .text h2{
     font-size: 24px;
   }
@@ -164,6 +186,9 @@
     gap: 36px;
     padding: 50px 16px;
     padding-bottom: 177px;
+  }
+  footer .footer_bottom .sns{
+    justify-content: center;
   }
 
   /* main page */
@@ -269,7 +294,8 @@
     padding: 0;
     background-color: inherit;
   }
-  .flex, .gray_bg .con{
+  .flex:not(.input_wrap , .footer_top),
+  .gray_bg .con{
     gap: 24px;
   }
   .gray_bg .con{
@@ -467,8 +493,6 @@
     right: -50px;
     width: 92px;
   }
-  .gray_bg{
-  }
   .gray_bg .con{
     border-radius: 0;
     font-size: 18px;
@@ -551,6 +575,66 @@
   .notice_wrap .tab_contents ul li .date{
     flex-shrink: 0;
     font-size: 13px;
+  }
+  .board_list thead{
+    display: none;
+  }
+  .board_list td{
+    padding: 0;
+    font-size: 13px;
+  }
+  .board_list .num,
+  .board_list .date,
+  .board_list .title{
+    text-align: left;
+    width: 100%;
+  }
+  .board_list .date{
+    text-align: right;
+  }
+  .board_list tbody tr{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border: 0;
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--color_border);
+    }
+  }
+  .board_list tbody tr .title a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .board_list tbody tr.notice .num span{
+    padding: 2px 12px;
+  }
+  .list_num{
+    margin: 36px 0;
+  }
+  .list_num li{
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .list_num li:nth-child(n+7){
+    display: none;
+    /* 질문 : 이거 css로 처리해도 되는건지 */
+  }
+  .list_num li:last-child{
+    display: flex;
   }
   footer .footer_top ul li a,
   footer .footer_top ul li .select_wrap p{
