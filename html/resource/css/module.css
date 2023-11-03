@@ -1115,6 +1115,7 @@ footer .footer_bottom .sns img{
 }
 
 .m_menu_wrap .m_menu .m_wing{
+  align-items: self-start;
   padding: 18px 15px;
   background-color: var(--color_gray_light);
 }
@@ -1131,6 +1132,8 @@ footer .footer_bottom .sns img{
   gap: 6px;
   justify-content: center;
   width: 100%;
+  text-align: center;
+  word-break: keep-all;
 }
 
 .m_menu_wrap .m_menu .m_nav{
@@ -1196,6 +1199,7 @@ footer .footer_bottom .sns img{
   padding: 16px 20px;
   background-color: var(--color_main);
   color: #fff;
+  box-sizing: border-box;
 }
 
 .m_nav_bottom{
