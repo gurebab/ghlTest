@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     // select box open
     $(".select_wrap").click(function () {
         $(this).toggleClass("act");
@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 
     // calendar select
-    $(".select_date .selected").click(function(){
+    $(".select_date .selected").click(function () {
         $(this).parent(".select_date").find('.calendar').toggleClass("act");
     });
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
     $(".tab li").click(function () {
         const content = $(".tab_content");
         const idx = $(this).index();
-        
+
         content.hide();
         content.eq(idx).show();
     });
@@ -64,7 +64,33 @@ $(document).ready(function(){
     });
 
     // wing banner
-    $(".wing_banner .menu").click(function(){
+    $(".wing_banner .menu").click(function () {
         $(this).parent().find(".accordion").toggleClass("act");
     });
+
+    // mobile menu open
+    $(".header_bottom .m_menu_btn").click(function () {
+        $("body").addClass("act");
+        $(".m_menu_wrap").addClass("act");
+    });
+    $(".m_menu_wrap .m_menu .top .close_btn").click(function () {
+        $("body").removeClass("act");
+        $(".m_menu_wrap").removeClass("act");
+    });
+
+    // body scroll lock
+    // $("body").click(function () {
+    //     const pageY = $(window).scrollTop();
+    //     if ($("body").hasClass("act")) {
+    //         $("body").css({
+    //             'top': pageY,
+    //             'position' : 'fixed',
+    //         });
+    //         console.log(pageY);
+    //     } else {
+    //         $("body").css({
+    //             'position' : 'relative',
+    //         });
+    //     }
+    // });
 });
